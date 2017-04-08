@@ -63,7 +63,7 @@ $(function() {
         });
 
         it('Atleast one entry in the feed', function() {
-            expect($('.feed .entry-link .entry h2').text()).toBeDefined();
+            expect($('.feed .entry').length).toBeGreaterThan(0);
         });
     });
 
